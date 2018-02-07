@@ -93,18 +93,18 @@ Copyright (c) 2014 Daniel Eden
 }
 
 .delay-md {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.delay-lg {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 
-.delay-lg {
+.delay-xl {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
-}
-
-.delay-xl {
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
 }
 
 /*how many times it will iterate through animation.*/

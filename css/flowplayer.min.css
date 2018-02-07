@@ -898,10 +898,10 @@
         -ms-flex: none;
             flex: none; }
   .flowplayer.fp-playful .fp-color, .flowplayer.fp-playful .fp-color-play {
-    background-color: #ec6c4c;
-    fill: #ec6c4c; }
+    background-color: #fff;
+    fill: #fff; }
   .flowplayer.fp-playful .fp-controls {
-    background-color: #006680; }
+    background-color: #6BCE86; }
   .flowplayer .fp-selected:before {
     content: "✓ "; }
   .flowplayer .fp-menu {
