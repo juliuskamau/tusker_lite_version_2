@@ -7,25 +7,83 @@
 	<title>TUSKER | site</title>
 	<link href="css/foundation.min.css" rel="stylesheet">
 	<link href="css/anicollection.css" rel="stylesheet">
-    <link href="css/slick.css" rel="stylesheet">
-    <link href="css/flowplayer.min.css" rel="stylesheet">
-    <link href="css/foundation-datepicker.min" rel="stylesheet">
-    <link href="css/app.css" rel="stylesheet">
+	<link href="css/slick.css" rel="stylesheet">
+	<link href="css/slick-theme.css" rel="stylesheet">
+	<link href="css/flowplayer.min.css" rel="stylesheet">
+	<link href="css/datepicker.min.css" rel="stylesheet">
+	<link href="css/app.css" rel="stylesheet">
 	<script src="js/vendor/modernizr.js">
 	</script>
 </head>
 <body>
+
+        
+
+
+
+
+
+        <div class="off-canvas-wrap" data-offcanvas>
+       <div class="inner-wrap">
+
+<!-- mobile strat -->
+
+<aside class="right-off-canvas-menu">
+       
+        <nav>
+                <ul>
+                    <li>
+                        <a href="#">Tusker Lite Parties</a>
+                    </li>
+                    <li>
+                        <a class="active" href="/">Tonight</a>
+                    </li>
+                    <li>
+                        <a href="#">This Weekend</a>
+                    </li>
+                    <li>
+                        <a href="#">Next Weekend</a>
+                    </li>
+                    <li></li>
+                </ul>
+            </nav>
+    </aside>
+<!-- mobile end -->    
+
+
 	<header>
+  
 		<div class="row">
-			<div class="large-3 column"><img alt="Tusker" src="images/elephant-logo-footer.png"></div>
-			<div class="large-9 column">
+               
+
+               
+
+            <div class="large-3 small-4  medium-4 column">
+                <img alt="Tusker" src="images/elephant-logo-footer.png">
+            </div>
+            
+            <div class="large-3 small-6  medium-6 column show-for-medium-down">
+                    <input id="date" name="date" placeholder="Choose Date" type="hidden">
+            </div>
+            <div class="large-3 small-2  medium-2 column show-for-medium-down">
+                  
+                    <a class="right-off-canvas-toggle menu-icon" href="#">
+                            <i class="fa fa-bars"></i>
+                    </a>
+
+
+            </div>
+
+       
+
+			<div class="large-7 column hide-for-medium-down">
 				<nav>
 					<ul class="inline right">
 						<li>
 							<a href="#">Tusker Lite Parties</a>
 						</li>
 						<li>
-							<a href="#">Tonight</a>
+							<a class="active" href="/">Tonight</a>
 						</li>
 						<li>
 							<a href="#">This Weekend</a>
@@ -33,14 +91,15 @@
 						<li>
 							<a href="#">Next Weekend</a>
 						</li>
-						<li>
-                            <a href="#">Calendar</a>
-                            <input type="text" class="span2" id="dp1">
-						</li>
+						<li></li>
 					</ul>
 				</nav>
 			</div>
-		</div>
+			<div class="large-2 column hide-for-medium-down">
+				<input id="date" name="date" placeholder="Choose Date" type="hidden">
+			</div>
+        </div>
+
 	</header>
 	<figure class="margin-0">
 		<div class="banner">
@@ -53,392 +112,254 @@
 		</div>
 	</figure>
 	<main>
-		<div class="tabs-nav-wrapper">
-			<ul class="tabs" data-tab="">
-				<li class="tab-title active">
-					<a href="#panel1">Nairobi</a>
-				</li>
-				<li class="tab-title">
-					<a href="#panel2">Central</a>
-				</li>
-				<li class="tab-title">
-					<a href="#panel3">Western</a>
-				</li>
-				<li class="tab-title">
-					<a href="#panel4">Coastal</a>
-				</li>
-				<li class="tab-title">
-					<a href="#panel5">The Rift</a>
-				</li>
-			</ul>
+		<div class="tabs-nav-wrapper sticky">
+			<div class="row" data-options="sticky_on: large"data-topbar="" role="navigation">
+				<div class="large-12 column">
+					<ul class="tabs" data-tab="">
+						<li class="tab-title active">
+							<a href="#panel1">Nairobi</a>
+						</li>
+						<li class="tab-title">
+							<a href="#panel2">Central</a>
+						</li>
+						<li class="tab-title">
+							<a href="#panel3">Western</a>
+						</li>
+						<li class="tab-title">
+							<a href="#panel4">Coastal</a>
+						</li>
+						<li class="tab-title">
+							<a href="#panel5">The Rift</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
-	
-<div class="wrapper-title">
-                    <div class="row">
-                            <div class="large-6 column">
-                                    <h2 class="sub-title">Tonight’s highlight parties</h2>
-                            </div>
-
-                            <div class="large-6 column show-all">
-                                    <p>show all</p>
-                                </div>
-                            </div>
-                        </div>
-				<div class="tabs-content">
-					<div class="content active" id="panel1">
-
-                            <div class="thumbnail-gallery">
-                                    <div>
-                                    <img alt="Tusker" src="images/thumbnail-slider.png">
-                                      <figcaption class="overlay">
-                                  <span class="date">15th December</span>
-                                  <span class="title">dj mr.t on the 
-                                        wheels of steel
-                                    </span>
-                                    <span class="venue">7d platinum bash, Nakuru</span>
-                                    <a href="#" class="button round">learn more</a>
-                                      </figcaption>
-                                    </div>
-                                    <div>
-                                            <img alt="Tusker" src="images/thumbnail-slider.png">
-                                              <figcaption class="overlay">
-                                          <span class="date">15th December</span>
-                                          <span class="title">dj mr.t on the 
-                                                wheels of steel
-                                            </span>
-                                            <span class="venue">7d platinum bash, Nakuru</span>
-                                            <a href="#" class="button round">learn more</a>
-                                              </figcaption>
-                                            </div>
-                                            <div>
-                                                    <img alt="Tusker" src="images/thumbnail-slider.png">
-                                                      <figcaption class="overlay">
-                                                  <span class="date">15th December</span>
-                                                  <span class="title">dj mr.t on the 
-                                                        wheels of steel
-                                                    </span>
-                                                    <span class="venue">7d platinum bash, Nakuru</span>
-                                                    <a href="#" class="button round">learn more</a>
-                                                      </figcaption>
-                                                    </div>
-                                                    <div>
-                                                            <img alt="Tusker" src="images/thumbnail-slider.png">
-                                                              <figcaption class="overlay">
-                                                          <span class="date">15th December</span>
-                                                          <span class="title">dj mr.t on the 
-                                                                wheels of steel
-                                                            </span>
-                                                            <span class="venue">7d platinum bash, Nakuru</span>
-                                                            <a href="#" class="button round">learn more</a>
-                                                              </figcaption>
-                                                            </div>
-                                                            <div>
-                                                                    <img alt="Tusker" src="images/thumbnail-slider.png">
-                                                                      <figcaption class="overlay">
-                                                                  <span class="date">15th December</span>
-                                                                  <span class="title">dj mr.t on the 
-                                                                        wheels of steel
-                                                                    </span>
-                                                                    <span class="venue">7d platinum bash, Nakuru</span>
-                                                                    <a href="#" class="button round">learn more</a>
-                                                                      </figcaption>
-                                                                    </div>
-                                                                    <div>
-                                                                            <img alt="Tusker" src="images/thumbnail-slider.png">
-                                                                              <figcaption class="overlay">
-                                                                          <span class="date">15th December</span>
-                                                                          <span class="title">dj mr.t on the 
-                                                                                wheels of steel
-                                                                            </span>
-                                                                            <span class="venue">7d platinum bash, Nakuru</span>
-                                                                            <a href="#" class="button round">learn more</a>
-                                                                              </figcaption>
-                                                                            </div>
-                                                                            <div>
-                                                                                    <img alt="Tusker" src="images/thumbnail-slider.png">
-                                                                                      <figcaption class="overlay">
-                                                                                  <span class="date">15th December</span>
-                                                                                  <span class="title">dj mr.t on the 
-                                                                                        wheels of steel
-                                                                                    </span>
-                                                                                    <span class="venue">7d platinum bash, Nakuru</span>
-                                                                                    <a href="#" class="button round">learn more</a>
-                                                                                      </figcaption>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                            <img alt="Tusker" src="images/thumbnail-slider.png">
-                                                                                              <figcaption class="overlay">
-                                                                                          <span class="date">15th December</span>
-                                                                                          <span class="title">dj mr.t on the 
-                                                                                                wheels of steel
-                                                                                            </span>
-                                                                                            <span class="venue">7d platinum bash, Nakuru</span>
-                                                                                            <a href="#" class="button round">learn more</a>
-                                                                                              </figcaption>
-                                                                                            </div>
-                                                                                            <div>
-                                                                                                    <img alt="Tusker" src="images/thumbnail-slider.png">
-                                                                                                      <figcaption class="overlay">
-                                                                                                  <span class="date">15th December</span>
-                                                                                                  <span class="title">dj mr.t on the 
-                                                                                                        wheels of steel
-                                                                                                    </span>
-                                                                                                    <span class="venue">7d platinum bash, Nakuru</span>
-                                                                                                    <a href="#" class="button round">learn more</a>
-                                                                                                      </figcaption>
-                                                                                                    </div>
-                            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="news">
-<div class="row">
-    <div class="large-12 column">
-						
-            <ul class="large-block-grid-5">
-                    <li>
-                       
-                                    <img alt="Tusker" src="images/events.png">
-                                      <figcaption class="overlay overwrite">
-                                  <span class="date">15th December</span>
-                                  <span class="title">
-                                        rock night
-                                    </span>
-                                    <span class="venue">the alchemist</span>
-                                    <a href="#" class="button round" tabindex="0">learn more</a>
-                                      </figcaption>
-                                 
-                    </li>
-                    <li>
-                       
-                            <img alt="Tusker" src="images/events.png">
-                              <figcaption class="overlay overwrite">
-                          <span class="date">15th December</span>
-                          <span class="title">
-                                rock night
-                            </span>
-                            <span class="venue">the alchemist</span>
-                            <a href="#" class="button round" tabindex="0">learn more</a>
-                              </figcaption>
-                         
-            </li>
-            <li>
-                       
-                    <img alt="Tusker" src="images/events.png">
-                      <figcaption class="overlay overwrite">
-                  <span class="date">15th December</span>
-                  <span class="title">
-                        rock night
-                    </span>
-                    <span class="venue">the alchemist</span>
-                    <a href="#" class="button round" tabindex="0">learn more</a>
-                      </figcaption>
-                 
-    </li>
-    <li>
-                       
-            <img alt="Tusker" src="images/events.png">
-              <figcaption class="overlay overwrite">
-          <span class="date">15th December</span>
-          <span class="title">
-                rock night
-            </span>
-            <span class="venue">the alchemist</span>
-            <a href="#" class="button round" tabindex="0">learn more</a>
-              </figcaption>
-         
-</li>
-<li>
-                       
-    <img alt="Tusker" src="images/events.png">
-      <figcaption class="overlay overwrite">
-  <span class="date">15th December</span>
-  <span class="title">
-        rock night
-    </span>
-    <span class="venue">the alchemist</span>
-    <a href="#" class="button round" tabindex="0">learn more</a>
-      </figcaption>
- 
-</li>                                <li>
-                       
-<img alt="Tusker" src="images/events.png">
-<figcaption class="overlay overwrite">
-<span class="date">15th December</span>
-<span class="title">
-rock night
-</span>
-<span class="venue">the alchemist</span>
-<a href="#" class="button round" tabindex="0">learn more</a>
-</figcaption>
-
-</li>
-<li>
-                       
-<img alt="Tusker" src="images/events.png">
-<figcaption class="overlay overwrite">
-<span class="date">15th December</span>
-<span class="title">
-rock night
-</span>
-<span class="venue">the alchemist</span>
-<a href="#" class="button round" tabindex="0">learn more</a>
-</figcaption>
-
-</li>
-<li>
-                       
-<img alt="Tusker" src="images/events.png">
-<figcaption class="overlay overwrite">
-<span class="date">15th December</span>
-<span class="title">
-rock night
-</span>
-<span class="venue">the alchemist</span>
-<a href="#" class="button round" tabindex="0">learn more</a>
-</figcaption>
-
-</li>
-<li>
-                       
-<img alt="Tusker" src="images/events.png">
-<figcaption class="overlay overwrite">
-<span class="date">15th December</span>
-<span class="title">
-rock night
-</span>
-<span class="venue">the alchemist</span>
-<a href="#" class="button round" tabindex="0">learn more</a>
-</figcaption>
-
-</li>
-<li>
-                       
-<img alt="Tusker" src="images/events.png">
-<figcaption class="overlay overwrite">
-<span class="date">15th December</span>
-<span class="title">
-rock night
-</span>
-<span class="venue">the alchemist</span>
-<a href="#" class="button round" tabindex="0">learn more</a>
-</figcaption>
-
-</li>
-                </ul>
-    </div>
-</div>
-
-
-                            
-                        </div>
-                      
-						<div class="videossilider">
-							
-                                <div class="videos">
-                                        <div class="flowplayer fp-playful" data-poster="images/video_poster.png" data-ratio="0.4">
-                                            <video><source src="images/lite_your_way.mp4" type="video/mp4"></video>
-                                        </div>
-                                    <figcaption class="overlay">
-                                            <span class="date">4th January</span>
-                                            <span class="title">
-                                                    In Living Colour
-                                              </span>
-                                              <span class="venue">the carnivore, Nairobi</span>
-                                            
-                                                </figcaption>
-                                </div>
-                                <div class="videos">
-                                    <img src="images/video-banner.png">
-                                    <figcaption class="overlay">
-                                            <span class="date">4th January</span>
-                                            <span class="title">
-                                                    In Living Colour
-                                              </span>
-                                              <span class="venue">the carnivore, Nairobi</span>
-                                            
-                                                </figcaption>
-                                </div>
-						
+		<div class="row">
+			<div class="large-12 column">
+				<h2 class="sub-title">Tonight’s highlight parties</h2>
+			</div>
+		</div>
+		<div class="tabs-content">
+			<div class="content active" id="panel1">
+				<div class="row">
+					<div class="large-12 column">
+						<div class="thumbnail-gallery row">
+							<div class="large-4 small-6 medium-4 column">
+								<img alt="Tusker" src="images/thumbnail-slider.png">
+								<figcaption class="overlay">
+									<span class="date">15th December</span> <span class="title">dj mr.t on the wheels of steel</span> <span class="venue">7d platinum bash, Nakuru</span> <a class="button round" href="#">learn more</a>
+								</figcaption>
+							</div>
+							<div class="large-4 small-6 medium-4 column">
+								<img alt="Tusker" src="images/thumbnail-slider.png">
+								<figcaption class="overlay">
+									<span class="date">15th December</span> <span class="title">dj mr.t on the wheels of steel</span> <span class="venue">7d platinum bash, Nakuru</span> <a class="button round" href="#">learn more</a>
+								</figcaption>
+							</div>
+							<div class="large-4 small-6 medium-4 column">
+								<img alt="Tusker" src="images/thumbnail-slider.png">
+								<figcaption class="overlay">
+									<span class="date">15th December</span> <span class="title">dj mr.t on the wheels of steel</span> <span class="venue">7d platinum bash, Nakuru</span> <a class="button round" href="#">learn more</a>
+								</figcaption>
+							</div>
+							<div class="large-4 small-6 medium-4 column">
+								<img alt="Tusker" src="images/thumbnail-slider.png">
+								<figcaption class="overlay">
+									<span class="date">15th December</span> <span class="title">dj mr.t on the wheels of steel</span> <span class="venue">7d platinum bash, Nakuru</span> <a class="button round" href="#">learn more</a>
+								</figcaption>
+							</div>
+							<div class="large-4 small-6 medium-4 column">
+								<img alt="Tusker" src="images/thumbnail-slider.png">
+								<figcaption class="overlay">
+									<span class="date">15th December</span> <span class="title">dj mr.t on the wheels of steel</span> <span class="venue">7d platinum bash, Nakuru</span> <a class="button round" href="#">learn more</a>
+								</figcaption>
+							</div>
+							<div class="large-4 small-6 medium-4 column">
+								<img alt="Tusker" src="images/thumbnail-slider.png">
+								<figcaption class="overlay">
+									<span class="date">15th December</span> <span class="title">dj mr.t on the wheels of steel</span> <span class="venue">7d platinum bash, Nakuru</span> <a class="button round" href="#">learn more</a>
+								</figcaption>
+							</div>
+							<div class="large-4 small-6 medium-4 column">
+								<img alt="Tusker" src="images/thumbnail-slider.png">
+								<figcaption class="overlay">
+									<span class="date">15th December</span> <span class="title">dj mr.t on the wheels of steel</span> <span class="venue">7d platinum bash, Nakuru</span> <a class="button round" href="#">learn more</a>
+								</figcaption>
+							</div>
+							<div class="large-4 small-6 medium-4 column">
+								<img alt="Tusker" src="images/thumbnail-slider.png">
+								<figcaption class="overlay">
+									<span class="date">15th December</span> <span class="title">dj mr.t on the wheels of steel</span> <span class="venue">7d platinum bash, Nakuru</span> <a class="button round" href="#">learn more</a>
+								</figcaption>
+							</div>
+							<div class="large-4 column">
+								<img alt="Tusker" src="images/thumbnail-slider.png">
+								<figcaption class="overlay">
+									<span class="date">15th December</span> <span class="title">dj mr.t on the wheels of steel</span> <span class="venue">7d platinum bash, Nakuru</span> <a class="button round" href="#">learn more</a>
+								</figcaption>
+							</div>
 						</div>
 					</div>
-					<div class="content" id="panel2">
-						<p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
-					</div>
-					<div class="content" id="panel3">
-						<p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
-					</div>
-					<div class="content" id="panel4">
-						<p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
-					</div>
-					<div class="content" id="panel5">
-						<p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+				</div>
+				<div class="news">
+					<div class="row">
+						<div class="large-12 column">
+							<ul class="large-block-grid-5 small-block-grid-2">
+								<li>
+									<img alt="Tusker" src="images/events.png">
+									<figcaption class="overlay overwrite">
+										<span class="date">15th December</span> <span class="title">rock night</span> <span class="venue">the alchemist</span> <a class="button round" href="#" tabindex="0">learn more</a>
+									</figcaption>
+								</li>
+								<li>
+									<img alt="Tusker" src="images/events.png">
+									<figcaption class="overlay overwrite">
+										<span class="date">15th December</span> <span class="title">rock night</span> <span class="venue">the alchemist</span> <a class="button round" href="#" tabindex="0">learn more</a>
+									</figcaption>
+								</li>
+								<li>
+									<img alt="Tusker" src="images/events.png">
+									<figcaption class="overlay overwrite">
+										<span class="date">15th December</span> <span class="title">rock night</span> <span class="venue">the alchemist</span> <a class="button round" href="#" tabindex="0">learn more</a>
+									</figcaption>
+								</li>
+								<li>
+									<img alt="Tusker" src="images/events.png">
+									<figcaption class="overlay overwrite">
+										<span class="date">15th December</span> <span class="title">rock night</span> <span class="venue">the alchemist</span> <a class="button round" href="#" tabindex="0">learn more</a>
+									</figcaption>
+								</li>
+								<li>
+									<img alt="Tusker" src="images/events.png">
+									<figcaption class="overlay overwrite">
+										<span class="date">15th December</span> <span class="title">rock night</span> <span class="venue">the alchemist</span> <a class="button round" href="#" tabindex="0">learn more</a>
+									</figcaption>
+								</li>
+								<li>
+									<img alt="Tusker" src="images/events.png">
+									<figcaption class="overlay overwrite">
+										<span class="date">15th December</span> <span class="title">rock night</span> <span class="venue">the alchemist</span> <a class="button round" href="#" tabindex="0">learn more</a>
+									</figcaption>
+								</li>
+								<li>
+									<img alt="Tusker" src="images/events.png">
+									<figcaption class="overlay overwrite">
+										<span class="date">15th December</span> <span class="title">rock night</span> <span class="venue">the alchemist</span> <a class="button round" href="#" tabindex="0">learn more</a>
+									</figcaption>
+								</li>
+								<li>
+									<img alt="Tusker" src="images/events.png">
+									<figcaption class="overlay overwrite">
+										<span class="date">15th December</span> <span class="title">rock night</span> <span class="venue">the alchemist</span> <a class="button round" href="#" tabindex="0">learn more</a>
+									</figcaption>
+								</li>
+								<li>
+									<img alt="Tusker" src="images/events.png">
+									<figcaption class="overlay overwrite">
+										<span class="date">15th December</span> <span class="title">rock night</span> <span class="venue">the alchemist</span> <a class="button round" href="#" tabindex="0">learn more</a>
+									</figcaption>
+								</li>
+								<li>
+									<img alt="Tusker" src="images/events.png">
+									<figcaption class="overlay overwrite">
+										<span class="date">15th December</span> <span class="title">rock night</span> <span class="venue">the alchemist</span> <a class="button round" href="#" tabindex="0">learn more</a>
+									</figcaption>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-		
+				<div class="wrapper-gallery">
+					<div class="row">
+						<div class="large-12 column">
+							<h2 class="sub-title">Tonight’s highlight parties</h2>
+						</div>
+					</div>
+					<div class="videossilider">
+						<div class="videos">
+							<div class="flowplayer fp-playful" data-poster="images/video_poster.png" data-ratio="0.4">
+								<video><source src="images/lite_your_way.mp4" type="video/mp4"></video>
+							</div>
+							<figcaption class="overlay">
+								<span class="date">4th January</span> <span class="title">In Living Colour</span> <span class="venue">the carnivore, Nairobi</span>
+							</figcaption>
+						</div>
+						<div class="videos">
+							<img src="images/video-banner.png">
+							<figcaption class="overlay">
+								<span class="date">4th January</span> <span class="title">In Living Colour</span> <span class="venue">the carnivore, Nairobi</span>
+							</figcaption>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content" id="panel2">
+				<p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+			</div>
+			<div class="content" id="panel3">
+				<p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+			</div>
+			<div class="content" id="panel4">
+				<p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+			</div>
+			<div class="content" id="panel5">
+				<p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+			</div>
+		</div>
 	</main>
-    
-    <footer>
-            <div class="row">
-                <div class="large-12 medium-12 columns mobile_footer">
-                    <div class="footer_top">
-                        <div class="row collapse">
-                            <div class="large-2 medium-2 columns">
-                                <div class="center footer_logo"><img alt="Tusker" src="images/elephant-logo-footer.png"></div>
-                            </div>
-                            <div class="large-10 medium-10 columns">
-                                <ul class="inline footer_links">
-                                    <li class="active">
-                                        <a href="#">Lager</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Malt</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Lite</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Cider</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Terms</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Privacy Policy and Cookie Notice</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Accessibility</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Drink Responsibly</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-12 medium-12 columns">
-                    <div class="margin-top-10 margin-bottom-10 color_white center">
-                        <p>Copyright © 2017 Kenya Breweries Limited. All Rights Reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+	<footer>
+		<div class="row">
+			<div class="large-12 medium-12 columns mobile_footer">
+				<div class="footer_top">
+					<div class="row collapse">
+						<div class="large-2 medium-2 columns">
+							<div class="center footer_logo"><img alt="Tusker" src="images/elephant-logo-footer.png"></div>
+						</div>
+						<div class="large-10 medium-10 columns footer-mobile">
+							<ul class="inline footer_links">
+								<li class="active">
+									<a href="#">Lager</a>
+								</li>
+								<li>
+									<a href="#">Malt</a>
+								</li>
+								<li>
+									<a href="#">Lite</a>
+								</li>
+								<li>
+									<a href="#">Cider</a>
+								</li>
+								<li>
+									<a href="#">Terms</a>
+								</li>
+								<li>
+									<a href="#">Privacy Policy and Cookie Notice</a>
+								</li>
+								<li>
+									<a href="#">Accessibility</a>
+								</li>
+								<li>
+									<a href="#">Drink Responsibly</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-12 medium-12 columns">
+				<div class="margin-top-10 margin-bottom-10 color_white center">
+					<p>Copyright © 2017 Kenya Breweries Limited. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+    </footer>
+    <a class="exit-off-canvas"></a>
 
-
-
+</div>
+</div>
 
 
 	<script src="js/vendor/jquery.js">
@@ -452,48 +373,15 @@ rock night
 	<script src="js/vendor/anijs-helper-scrollreveal-min.js">
 	</script> 
 	<script src="js/vendor/imgLiquid-min.js">
+	</script> 
+	<script src="js/vendor/slick.js">
+	</script> 
+	<script src="js/vendor/flowplayer.min.js">
+	</script> 
+	<script src="js/vendor/datepicker.js">
     </script> 
-    	<script src="js/vendor/slick.js">
-        </script> 
-
     
-<script src="js/vendor/flowplayer.min.js">
-</script> 
-
-
-<script src="js/vendor/foundation-datepicker.min.js">
-</script> 
-<script src="js/vendor/foundation-datepicker.vi.js">
-</script> 
-
-<script>
-			$(function () {
-
-
-
-
-
-
-
-				window.prettyPrint && prettyPrint();
-				$('#dp1').fdatepicker({
-					initialDate: '02-12-1989',
-					format: 'mm-dd-yyyy',
-					// keyboardNavigation: false,
-					disableDblClickSelection: true,
-					leftArrow:'<<',
-					rightArrow:'>>',
-					closeIcon:'X',
-					closeButton: true
-					// autoShow: false
-				});
-
-
-		
-			
-			});
-		</script>
-
+ 
 	<script src="js/app.js">
 	</script>
 </body>

@@ -35,32 +35,55 @@ IMAGECROPPER = {
 THUMBNAIL = {
     bindThumbnail: function () {
    
+      //  $(".thumbnail-gallery").slick({
+        //    dots: true,
+        //    infinite: true,
+         //   slidesToShow: 3,
+          //  slidesToScroll: 3,
+          //  autoplay:true,
+           // arrows:false,
+           // autoplaySpeed:1500
+        //  });
+
+
         $('.thumbnail-gallery').slick({
-            centerMode: true,
-            dots: true,
-            centerPadding: '60px',
-            slidesToShow: 3,
+        dots: true,
+        infinite: true,
+         slidesToShow: 3,
+          slidesToScroll: 3,
+          autoplay:true,
+           arrows:false,
+           autoplaySpeed:1500,
             responsive: [
               {
-                breakpoint: 768,
+                breakpoint: 1024,
                 settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: '40px',
-                  slidesToShow: 3
+                    dots: true,
+                     slidesToShow: 2,
+                      slidesToScroll: 2,
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
                 }
               },
               {
                 breakpoint: 480,
                 settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: '40px',
-                  slidesToShow: 1
+                  slidesToShow: 1,
+                  slidesToScroll: 1
                 }
               }
+              // You can unslick at a given breakpoint now by adding:
+              // settings: "unslick"
+              // instead of a settings object
             ]
           });
+
+
         
         
     }
@@ -73,7 +96,10 @@ VIDEOSILIDER = {
    
         $(document).ready(function () {
             $('.videossilider').slick({
-                dots: false
+                dots: false,
+               autoplay:true,
+                autoplay:true
+
 
             });
         });
@@ -82,8 +108,35 @@ VIDEOSILIDER = {
     }
 };
 
+DATEPICKER = {
+    bindDatePicker: function () {
+   
+        $(function() {
+            $( "#date" ).datepicker({
+              showOn: "both", 
+              buttonText: "<a>Calendar</a>" 
 
+              
+            });
+          });
+      
+        
+        
+    }
+};
 
+ACTIVELINKS = {
+    bindActiveLinks: function () {
+   
+        $(document).ready(function(){
+            $('ul li a').click(function(){
+              $('li a').removeClass("active");
+              $(this).addClass("active");
+          });
+          });
+        
+    }
+};
 
 
 
@@ -92,6 +145,8 @@ var onLoad = function () {
     IMAGECROPPER.bindImageCropper();
     THUMBNAIL.bindThumbnail();
     VIDEOSILIDER.bindVideoSilider();
+    DATEPICKER.bindDatePicker();
+    ACTIVELINKS.bindActiveLinks()
 
 };
 
