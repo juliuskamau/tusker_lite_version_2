@@ -351,6 +351,10 @@ h4 {
 
 
 /*----- header  CSS START HERE-----*/
+header.inner{
+	position: initial;
+}
+
 header .active::before{
 	content: "•";
     font-size: 35px;
@@ -525,7 +529,7 @@ main  .tabs .tab-title:last-child{
 }*/
 .tabs-nav-wrapper{
 	background-image: url(../images/tabs_texture.png);
-	padding: 2rem 0px 0rem 0px;
+	padding: 1.5rem 0px 1.5rem 0px;
 
 }
 .sub-title {
@@ -546,6 +550,13 @@ main  .tabs .tab-title:last-child{
     position: absolute;
     top:40%;
     left: 0px;
+}
+
+.social-wrapper-title h3{
+    text-transform: uppercase;
+    color: #6BCE86;
+    padding: 0px 0px 25px 0px;
+
 }
 
 /*----- ORBIT SLIDER  CSS START HERE-----*/
@@ -585,6 +596,22 @@ ul.slick-dots li.slick-active button{
 	margin: 0px;
 }
 
+.thumbnail-gallery .panel{
+background: #1A1A1A;
+border:none;
+margin: 0px;
+}
+.thumbnail-gallery .panel p{
+	color: #999999;
+
+}
+.thumbnail-gallery .panel a{
+	color:#6BCE86;
+}
+
+.thumbnail-gallery .panel img.clear{
+	margin: 0px 0px 1.25rem 0px;
+}
 .thumbnail-gallery .slick-slide div div{
 	position: relative;
 	overflow: hidden; 
@@ -599,6 +626,24 @@ margin: 0px;
   .thumbnail-gallery .slick-slide{
 margin-bottom: 30px;
   }
+  .profile_image img {
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+    border-radius: 40px;
+	margin: 0px 10px 0px 0px;
+	border: solid 1px #fff;
+
+}
+.profile_image span,  .profile_image img {
+	display: inline;
+	
+}
+.profile_image{
+	color: white;
+	margin: 0px 0px 1.25rem 0px;
+}
+
 figcaption.overlay{
     position: absolute;
     left: 0px;
@@ -657,6 +702,9 @@ figcaption.overlay.overlay.overwrite{
 	padding: 20px 0px 0px 0px;
 	}
 
+	figcaption.overlay.overwrite.inner{
+padding: 0px;
+	}
 figcaption.overlay.overlay.overwrite span.title{
 line-height:normal; 
 	}	
@@ -664,15 +712,15 @@ line-height:normal;
 
 
 /*----- News  CSS START HERE-----*/
-.news,.wrapper-gallery{
+.news,.wrapper-gallery,.wrapper-events{
 	background-image: url(../images/news_texture.png);
-	padding: 2.25rem 0px 0rem 0px;
 	background-repeat: repeat-x;
 	margin-top: 30px;
+
 }
 
 .wrapper-gallery{
-	padding: 0rem 0px 0rem 0rem;
+	padding: 0rem 0px 2rem 0rem;
 }
 
 .news img{
@@ -758,12 +806,18 @@ z-index: 1;
     bottom: 62px;
     background-color: rgba(0, 0, 0, 0);
 }
-
-.videossilider  span.date, .videossilider  span.venue {
+.overlay.overwrite.inner{
+    margin-bottom: 40px;
+    margin-left: 51px;
+    margin-top: 30px;
+}
+.videossilider  span.date, .videossilider  span.venue,
+.overlay.overwrite.inner span.date, .overlay.overwrite.inner  span.venue {
 	font-size: 40px;
 }
 
-.videossilider span.title{
+.videossilider span.title,
+.overlay.overwrite.inner span.title{
     font-size: 80px;
     width: 100%;
     line-height: normal;
@@ -793,6 +847,19 @@ z-index: 1;
     width: 4em;
     height: 4em
  }
+
+ figure .videossilider .flowplayer .fp-play svg, 
+ figure .videossilider .flowplayer .fp-pause svg, 
+ figure .videossilider .flowplayer .fp-waiting svg{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 4em;
+    height: 4em
+ }
+
+
 
 
 /*footer styling*/

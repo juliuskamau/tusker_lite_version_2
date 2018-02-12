@@ -35,15 +35,7 @@ IMAGECROPPER = {
 THUMBNAIL = {
     bindThumbnail: function () {
    
-      //  $(".thumbnail-gallery").slick({
-        //    dots: true,
-        //    infinite: true,
-         //   slidesToShow: 3,
-          //  slidesToScroll: 3,
-          //  autoplay:true,
-           // arrows:false,
-           // autoplaySpeed:1500
-        //  });
+  
 
 
         $('.thumbnail-gallery').slick({
@@ -99,14 +91,30 @@ VIDEOSILIDER = {
                 dots: false,
                autoplay:true,
                 autoplay:true
+            });
+        });
+              
+    }
+
+};
+
+
+VIDEOBanner = {
+    bindVideoBanner: function () {
+   
+        $(document).ready(function () {
+            $('.videoBanner').slick({
+                dots: false,
+               autoplay:true,
+                autoplay:true
 
 
             });
-        });
-        
-        
+        });    
     }
+
 };
+
 
 DATEPICKER = {
     bindDatePicker: function () {
@@ -147,6 +155,7 @@ var onLoad = function () {
     VIDEOSILIDER.bindVideoSilider();
     DATEPICKER.bindDatePicker();
     ACTIVELINKS.bindActiveLinks()
+    VIDEOBanner.bindVideoBanner();
 
 };
 
