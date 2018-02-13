@@ -6,7 +6,7 @@
              // Fakes the loading setting a timeout
                setTimeout(function() {
                    $('body').addClass('loaded');
-               }, 4000);
+               }, 1000);
             
            });
         
@@ -31,6 +31,22 @@ IMAGECROPPER = {
         
     }
 };
+
+
+YOUTUBEVIDEOS = {
+    bindYoutubeVideos: function () {
+   
+        (function ($) {
+            $('iframe.yt-hd-thumbnail').youTubeHDThumbnail({darkenThumbnail: false});
+            $('iframe.yt-hd-thumbnail-darken').youTubeHDThumbnail({darkenThumbnail: true});
+        })(jQuery);
+        
+        
+    }
+};
+
+
+
 
 THUMBNAIL = {
     bindThumbnail: function () {
@@ -89,8 +105,8 @@ VIDEOSILIDER = {
         $(document).ready(function () {
             $('.videossilider').slick({
                 dots: false,
-               autoplay:true,
-                autoplay:true
+               autoplay:false,
+              
             });
         });
               
@@ -106,7 +122,7 @@ VIDEOBanner = {
             $('.videoBanner').slick({
                 dots: false,
                autoplay:true,
-                autoplay:true
+               
 
 
             });
@@ -156,6 +172,7 @@ var onLoad = function () {
     DATEPICKER.bindDatePicker();
     ACTIVELINKS.bindActiveLinks()
     VIDEOBanner.bindVideoBanner();
+    YOUTUBEVIDEOS.bindYoutubeVideos();
 
 };
 
