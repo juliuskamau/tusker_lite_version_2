@@ -106,6 +106,7 @@ VIDEOSILIDER = {
             $('.videossilider').slick({
                 dots: false,
                autoplay:false,
+               
               
             });
         });
@@ -130,6 +131,26 @@ VIDEOBanner = {
     }
 
 };
+
+BANNERGALLERY = {
+    bindBannerGallery: function () {
+   
+        $(document).ready(function () {
+            $('.videogallery').slick({
+                dots: false,
+               autoplay:false,
+               
+              
+            });
+        });
+              
+    }
+
+};
+
+
+
+
 
 
 DATEPICKER = {
@@ -173,6 +194,7 @@ var onLoad = function () {
     ACTIVELINKS.bindActiveLinks()
     VIDEOBanner.bindVideoBanner();
     YOUTUBEVIDEOS.bindYoutubeVideos();
+    BANNERGALLERY.bindBannerGallery();
 
 };
 
