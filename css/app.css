@@ -1153,7 +1153,7 @@ footer {
 ------------------------------------------*/
 #map-canvas{
 	height: 300px;
-	width: 600px;
+
 }
 .pin {
 	width: 30px;
@@ -1418,7 +1418,8 @@ footer {
 	}
 
 	.videossilider .slick-prev, .videossilider .slick-next{
-display: none !important;
+		background-image: url(../images/videos-arrow-mobile.png);
+		width: 28.5px;
 
 	}
 	.videossilider .flowplayer{
@@ -1438,8 +1439,8 @@ display: none !important;
 	}
 
 	.videossilider figcaption.overlay{
-		left: 20px;
-		bottom: 27px;
+		left: 30px;
+		bottom: 30px;
 	}
 
 	.footer_links li a {
@@ -1563,7 +1564,8 @@ header {
 	}
 
 	.videossilider .slick-prev, .videossilider .slick-next{
-display: none !important;
+		background-image: url(../images/videos-arrow-mobile.png);
+		width: 28.5px;
 
 	}
 	.videossilider .flowplayer{
@@ -1583,8 +1585,8 @@ display: none !important;
 	}
 
 	.videossilider figcaption.overlay{
-		left: 20px;
-		bottom: 27px;
+		left: 30px;
+		bottom: 30px;
 	}
 
 	.footer_links li a {
@@ -1709,10 +1711,7 @@ and (max-device-width : 1024px)  {
 		font-size: 24px;
 	}
 
-	.videossilider .slick-prev, .videossilider .slick-next{
-display: none !important;
 
-	}
 	.videossilider .flowplayer{
 		padding: 0px;
 	}
